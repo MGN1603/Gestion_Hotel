@@ -1,27 +1,29 @@
 package DTOs;
 
+//clase de tipo objeto de trasferencia con el objetivo de no exponer la entidad Habitacion.
 public class HabitacionDTO {
 
-    private int numero;
+    private int numeroH;
     private String tipo;
     private int capacidad;
     private String estado;
-    private int idReserva;
+    private int idReserva;// se les pasa algun tipo de refencia al objeto no se maneja el objeto como tal.
 
-    public HabitacionDTO(int numero, String tipo, int capacidad, String estado, int idReserva) {
-        this.numero = numero;
+    public HabitacionDTO(int numeroH, String tipo, int capacidad, String estado, int idReserva) {
+        this.numeroH = numeroH;
         this.tipo = tipo;
         this.capacidad = capacidad;
         this.estado = estado;
         this.idReserva = idReserva;
     }
 
-    public int getNumero() {
-        return numero;
+    //Metodos Getters y Setters.
+    public int getNumeroH() {
+        return numeroH;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
+    public void setNumeroH(int numeroH) {
+        this.numeroH = numeroH;
     }
 
     public String getTipo() {
@@ -54,5 +56,10 @@ public class HabitacionDTO {
 
     public void setIdReserva(int idReserva) {
         this.idReserva = idReserva;
+    }
+
+    @Override
+    public String toString() {
+        return "Habitación " + numeroH + " - " + tipo;
     }
 }

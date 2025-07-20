@@ -1,27 +1,18 @@
 package DTOs;
 
+//clase de tipo trasferencia de datos para no exponer la clase entidad completa.
 public class HuespedDTO {
 
-    private String nombre;
     private int documento;
-    private String correo;
+    private String nombre;
     private String telefono;
-    private String idReserva;
+    private String correo;
 
-    public HuespedDTO(String nombre, int documento, String correo, String telefono, String idReserva) {
-        this.nombre = nombre;
+    public HuespedDTO(int documento, String nombre, String telefono, String correo) {
         this.documento = documento;
-        this.correo = correo;
-        this.telefono = telefono;
-        this.idReserva = idReserva;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
         this.nombre = nombre;
+        this.telefono = telefono;
+        this.correo = correo;
     }
 
     public int getDocumento() {
@@ -32,12 +23,12 @@ public class HuespedDTO {
         this.documento = documento;
     }
 
-    public String getCorreo() {
-        return correo;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getTelefono() {
@@ -48,11 +39,16 @@ public class HuespedDTO {
         this.telefono = telefono;
     }
 
-    public String getIdReserva() {
-        return idReserva;
+    public String getCorreo() {
+        return correo;
     }
 
-    public void setIdReserva(String idReserva) {
-        this.idReserva = idReserva;
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    @Override
+    public String toString() {
+        return nombre + " (" + documento + ")";
     }
 }

@@ -2,15 +2,16 @@ package DTOs;
 
 import java.time.LocalDate;
 
+//clase de tipo transferencia de datos para controlador y vista para no exponer la entidad completa.
 public class ReservaDTO {
 
-    private int idReserva;
+    private String idReserva;
     private LocalDate fechaEntrada;
     private LocalDate fechaSalida;
-    private int idHuesped;
+    private int idHuesped; //referencias a los objetos comlejos por medio de ids para su posible asociacion con estas clases.
     private int idHabitacion;
 
-    public ReservaDTO(int idReserva, LocalDate fechaEntrada, LocalDate fechaSalida, int idHuesped, int idHabitacion) {
+    public ReservaDTO(String idReserva, LocalDate fechaEntrada, LocalDate fechaSalida, int idHuesped, int idHabitacion) {
         this.idReserva = idReserva;
         this.fechaEntrada = fechaEntrada;
         this.fechaSalida = fechaSalida;
@@ -18,11 +19,11 @@ public class ReservaDTO {
         this.idHabitacion = idHabitacion;
     }
 
-    public int getIdReserva() {
+    public String getIdReserva() {
         return idReserva;
     }
 
-    public void setIdReserva(int idReserva) {
+    public void setIdReserva(String idReserva) {
         this.idReserva = idReserva;
     }
 
@@ -56,5 +57,10 @@ public class ReservaDTO {
 
     public void setIdHabitacion(int idHabitacion) {
         this.idHabitacion = idHabitacion;
+    }
+
+    @Override
+    public String toString() {
+        return "Reserva #" + idReserva + " del huésped " + idHuesped;
     }
 }

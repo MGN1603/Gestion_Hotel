@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/Modelo/Huesped.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/Modelo/Habitacion.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/Modelo/Reserva.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/Modelo/IDsGenerator.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/DTOs/HabitacionDTO.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/DTOs/HuespedDTO.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/DTOs/ReservaDTO.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/DAOs/DaoHuesped.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/Controladores/ControladorHuesped.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/Excepciones/HuespedExistenteExcepcion.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/Excepciones/HuespedNoEncontradoExcepcion.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/Excepciones/DatoInvalidoExcepcion.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/Excepciones/FechaInvalidaExcepcion.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/Excepciones/HabitacionNoDisponible.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/GestionHotel/src/Vistas/VentanaRegistroHuesped.java</file>
+        </group>
+    </open-files>
+</project-private>

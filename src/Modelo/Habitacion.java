@@ -2,6 +2,7 @@ package Modelo;
 
 import java.util.ArrayList;
 
+//clase Habitacion la cual tambien tiene una relacion con una lista de reservas.
 public class Habitacion {
 
     private int numero;
@@ -18,6 +19,7 @@ public class Habitacion {
         this.listaReserva = new ArrayList<>();
     }
 
+    //Metodos Getters y Setters.
     public int getNumero() {
         return numero;
     }

@@ -3,6 +3,7 @@ package DAOs;
 import DTOs.HuespedDTO;
 import java.util.ArrayList;
 
+//clase o capa necesaria para acceso a datos maneja principlaente el crud por medio de memoria
 public class DaoHuesped {
 
     private ArrayList<HuespedDTO> huespedes;
@@ -17,7 +18,7 @@ public class DaoHuesped {
     }
 
     public boolean guardarHuesped(HuespedDTO huesped) {
-        if (huesped != null) {
+        if (huesped != null && buscarHuesped(huesped.getDocumento()) == null) {
             huespedes.add(huesped);
             return true;
         }

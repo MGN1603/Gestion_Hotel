@@ -2,6 +2,7 @@ package Modelo;
 
 import java.util.ArrayList;
 
+//clase huesped con sus atributos y una lista de sus reservas.
 public class Huesped {
 
     private String nombre;
@@ -17,7 +18,8 @@ public class Huesped {
         this.telefono = telefono;
         this.reservas = new ArrayList<>();
     }
-
+    
+    //Metodos Getters y Setters.
     public String getNombre() {
         return nombre;
     }
@@ -58,10 +60,4 @@ public class Huesped {
         this.reservas = reservas;
     }
 
-    @Override
-    public String toString() {
-        return "Huesped{" + "nombre=" + nombre + ", documento=" + documento + ", correo=" + correo + ", telefono=" + telefono + ", reservas=" + reservas + '}';
-    }
-    
-    
 }
